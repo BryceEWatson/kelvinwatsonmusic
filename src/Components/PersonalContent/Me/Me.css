@@ -1,0 +1,11 @@
+.MeSection {
+  transition: all 1s ease;
+}
+.MeSectionBlackText{
+  color: black;
+  background: white;
+}
+.MeSectionWhiteText{
+  color: white;
+  background: black;
+}

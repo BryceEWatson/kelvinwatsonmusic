@@ -1,0 +1,80 @@
+.ExploreStation__Section{
+  width: 100%;
+  height: 100%;
+}
+
+.ExploreStation__Section--Show{
+  display:block;
+}
+
+.ExploreStation__Section--Hide{
+  display:none;
+}
+
+.ExploreStation__MainImage{
+  position:absolute;
+  width: 102%;
+  height: 102%;
+  object-fit: cover;
+  object-position: center;
+  opacity:0;
+  z-index: 10;
+
+  /*-webkit-filter: url("#glitch");
+  filter: url("#glitch");*/
+  display: inline-block;
+}
+
+.ExploreStation__MainImage--Animation{
+  animation: Appear 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.ExploreStation__MainImage--SkipAnimation{
+  display:none;
+}
+
+.ExploreStation__GlitchSvg{
+  display:none;
+}
+
+.ExploreStation__MainImage2{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 102%;
+  object-fit: cover;
+  object-position: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.ExploreStation__MainImage2--Dimmer{
+  filter: brightness(35%);
+  -webkit-filter: brightness(35%);
+}
+.ExploreStation__MainImage2--Animation{
+  animation: Appear 0.5s linear forwards;
+  animation-delay: 0s;
+}
+
+.ExploreStation__MainImage2--SkipAnimation{
+  opacity:1;
+  visibility: visible;
+}
+
+
+@keyframes Appear {
+  0%{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1000;
+  }
+  100%{
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+}

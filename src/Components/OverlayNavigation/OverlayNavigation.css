@@ -1,0 +1,133 @@
+.OverlaySection{
+  background: black;
+  color: white;
+  padding:12px 0;
+}
+
+.OverlayNavigationItem{
+  padding:8px;
+}
+.NavigationListItems{
+  overflow-y: scroll;
+}
+.NavigationListItem {
+  display: inline-block;
+}
+
+.NavigationListItem--Link {
+  color: white;
+  cursor: pointer;
+}
+
+.NavigationListItem--Link:after {
+  content: '';
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.NavigationListItem--Link:hover:after {
+  width: 100%;
+  background: white;
+}
+
+.NavigationListItem--Link, .NavigationListItem--Link:hover {
+  text-decoration: none;
+}
+
+.NavigationListItem--ListItem {
+  display: block;
+  position: relative;
+  margin-right: 10px;
+  color: silver;
+  transition: color .5s ease;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 4px 0;
+}
+
+.NavigationListItem--ListItem:hover {
+  cursor: pointer;
+  color: white;
+
+  animation: Noise 2s linear 2;
+}
+
+.NavigationListItem--ListItem:after {
+  content: '';
+  display: block;
+  margin-top: 2px;
+  margin-right: 0;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: all .15s ease;
+}
+
+.NavigationListItem--ListItem:hover:after {
+  color: white;
+  width: 100%;
+  background: white;
+}
+
+.Overlay {
+  position: fixed;
+  overflow-y: hidden;
+  height: 100%;
+  width: 30%;
+  color: white;
+  background: black;
+  right: -300%;
+  text-align: right;
+
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -webkit-transition: all .8s ease;
+
+  z-index: 9999;
+}
+
+.Overlay--Active {
+  display: block;
+  right: 0;
+}
+
+@keyframes Noise {
+  0%, 3%, 5%, 42%, 44%, 100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  4.3% {
+    opacity: 1;
+    transform: scaleY(1.7);
+  }
+  43% {
+    opacity: 1;
+    transform: scaleX(1.5);
+  }
+}
+
+@media(max-width: 767px) {
+  /* phones */
+  .Overlay {
+    width: 50%;
+  }
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .Overlay {
+    width: 50%;
+  }
+}
+
+@media(max-width: 480px) {
+  .NavigationListItem--Link{
+    font-size: 0.85em;
+  }
+}
+
+@media(min-width: 768px) {
+  /* tablets and desktop */
+}

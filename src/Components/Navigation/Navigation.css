@@ -1,0 +1,262 @@
+.NavigationSection {
+  /* Initial State */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#000, #000);
+  color: white;
+  animation: FillNavigationBackground 1.5s forwards;
+  -webkit-animation: FillNavigationBackground 1.5s forwards;
+  animation-timing-function: cubic-bezier(0.8, 0.050, 0.8, 0.060);
+  font-size: 1em;
+  font-family: 'Work Sans', sans-serif;
+  /*letter-spacing: 2px;*/
+  width: 100%;
+  z-index: 1000;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.NavigationSection__Name:hover {
+  cursor: pointer;
+}
+
+.NavigationSection__Logo {
+  display: inline;
+  width: 100%;
+
+  /*animation: Noise 2s linear 3;*/
+
+}
+
+.NavigationSection__Logo__Table{
+  display:table;
+}
+
+.NavigationSection__Logo__TableRow{
+  display:table-row;
+}
+
+.NavigationSection__Name__TableCell{
+  display: table-cell;
+  /*vertical-align: middle;*/
+}
+
+.NavigationSection__Name:hover {
+  /*animation: Noise 2s linear infinite;*/
+}
+/*
+.NavigationSection__Logo::after {
+  content: 'KELVIN WATSON';
+  font-size: 1.6em;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 6px;
+  right: 20%;
+  opacity: 0;
+  color: darkblue;
+  animation: Noise1 2s linear 2;
+}
+
+.NavigationSection__Logo:before {
+  content: 'KELVIN WATSON';
+  font-size: 1.6em;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 6px;
+  right: 20%;
+  opacity: 0;
+  color: red;
+  animation: Noise2 2s linear 2;
+}*/
+
+/*
+ * Adapted from https://codepen.io/kaypooma/pen/ehfjC
+ */
+@keyframes Noise {
+  0%, 3%, 5%, 42%, 44%, 100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  4.3% {
+    opacity: 1;
+    transform: scaleY(1.7);
+  }
+  43% {
+    opacity: 1;
+    transform: scaleX(1.5);
+  }
+}
+
+@keyframes Noise1 {
+  0%, 20%, 40%, 60%, 70%, 90% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .1;
+  }
+  50% {
+    opacity: .5;
+    left: -6px;
+  }
+  80% {
+    opacity: .3;
+  }
+  100% {
+    opacity: .6;
+    left: 2px;
+  }
+}
+
+@keyframes Noise2 {
+  0%, 20%, 40%, 60%, 70%, 90% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .1;
+  }
+  50% {
+    opacity: .5;
+    left: 6px;
+  }
+  80% {
+    opacity: .3;
+  }
+  100% {
+    opacity: .6;
+    left: -2px;
+  }
+}
+
+@keyframes FillNavigationBackground {
+  0% {
+    color: black;
+    background-size: 0% 100%;
+  }
+  100% {
+    color: white;
+    background-size: 100% 100%;
+  }
+}
+
+.NavigationSectionMenu__MenuSvg:hover .path1 {
+  animation: Spin 2s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+.NavigationSectionMenu__MenuSvg:hover .path2 {
+  animation: Spin 2s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.NavigationSection:hover {
+  background-size: 100% 100%;
+  color: white;
+}
+
+.NavigationSection__Container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.NavigationSection--White {
+  color: white;
+}
+
+.NavigationSection__Container--Left {
+  /*flex-basis: 90%;*/
+}
+
+.NavigationSection__Container--Right {
+  flex-basis: 10%;
+}
+
+.NavigationSection__Container--Right {
+  text-align: right;
+}
+
+.NavigationSection__Name {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.04em;
+  font-size: 1.8em;
+  font-weight: 700;
+  padding-right: 0.3em;
+}
+
+.NavigationSection__Skills {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  line-height: 1;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.NavigationSectionMenu {
+  text-align: right;
+}
+
+.NavigationSectionMenu__Svg {
+  vertical-align: middle;
+}
+
+.NavigationSectionMenu {
+  display: inline-block;
+  flex-basis: 10%;
+}
+
+@media(max-width: 767px) {
+  /* phones */
+  .NavigationOverlay {
+    width: 60%;
+  }
+  .NavigationSection__Name{
+    display:block;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+  }
+  .NavigationSection__Skills{
+    /*display:block;
+    font-size:0.6em;*/
+    display:none;
+  }
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .NavigationOverlay {
+    width: 60%;
+  }
+  .NavigationSection__Name{
+    display:block;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+  }
+  .NavigationSection__Skills{
+    /*display:block;
+    font-size:0.6em;*/
+    display:none;
+  }
+}
+
+@media(min-width: 768px) {
+  /* tablets and desktop */
+}

@@ -1,0 +1,49 @@
+.StationDialPositioningWrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 12;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.StationDialSection {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.StationDial__Option {
+  position: absolute;
+}
+
+.StationDial__Option--BottomLeft {
+  bottom: 0;
+  left: 0;
+}
+
+.StationDial__Option--BottomRight {
+  bottom: 0;
+  right: 0;
+}
+
+.StationDial__Option--TopRight {
+  top: 0;
+  right: 0;
+}
+
+.StationDial__Option--TopLeft {
+  top: 0;
+  left: 0;
+}
+
+.StationDial__Option--Center {
+  left: 28%;
+  top: 42%;
+}

@@ -1,0 +1,41 @@
+.AnimatedBackgroundSection {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.AnimatedBackgroundSection-FallbackImage-White {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.AnimatedBackgroundSection-VideoContainer{
+  height: 100%;
+  width: 100%;
+}
+
+.AnimatedBackgroundSection-Video{
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.AnimatedBackgroundSection-VideoContainer--Overlay{
+  height: 1000px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.25s ease;
+
+  /*APPLY THIS WHEN HOVER OVER NAVIGATION*/
+
+}
+
+.AnimatedBackgroundSection-VideoContainer__Overlay--Darken{
+  background-color: rgba(0,0,0,0.3);
+  background-image: linear-gradient(45deg, rgba(0,0,0,0.3) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3)),
+      linear-gradient(45deg,  rgba(0,0,0,0.3) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.3));
+  background-size:2px 2px;
+}

@@ -1,0 +1,55 @@
+.AnimatedBorderButton__Button--DrawBorder {
+  /*box-shadow: inset 0 0 0 4px #58afd1;*/
+  color: #fff;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+.AnimatedBorderButton__Button--DrawBorder::before, .AnimatedBorderButton__Button--DrawBorder::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.AnimatedBorderButton__Button--DrawBorder::before {
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+.AnimatedBorderButton__Button--DrawBorder::after {
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+.AnimatedBorderButton__Button--DrawBorder:hover {
+  color: #fff;
+}
+.AnimatedBorderButton__Button--DrawBorder:hover::before, .AnimatedBorderButton__Button--DrawBorder:hover::after {
+  border-color: #fff;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.AnimatedBorderButton__Button--DrawBorder:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.AnimatedBorderButton__Button--DrawBorder:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.AnimatedBorderButton__Button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+
+.AnimatedBorderButton__Button:focus, .AnimatedBorderButton__Button:active {
+  color: black;
+  background: rgba(255,255,255,0.2);
+  outline: none;
+}

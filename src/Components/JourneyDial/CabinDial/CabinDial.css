@@ -1,0 +1,42 @@
+.CabinDialPositioningWrapper {
+  width: 160px;
+  height: 200px;
+  position: absolute;
+  z-index: 12;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.CabinDialOption {
+  position: absolute;
+}
+
+.CabinDial__TitleChoose {
+  top: 21%;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CabinDial__Option {
+  position: absolute;
+}
+
+.CabinDial__Option--Left {
+  left: 0;
+}
+
+.CabinDial__Option--Right {
+  right: 0;
+}
+.CabinDial__Option--Top{
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

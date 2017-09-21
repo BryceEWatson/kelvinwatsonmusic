@@ -1,0 +1,192 @@
+@keyframes MeAppear {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.MeContent {
+  padding-top: 8em;
+  font-family: 'EB Garamond', serif;
+  overflow-y: scroll;
+}
+
+.MeContent--Show {
+  /*visibility: visible;
+  opacity:1;*/
+  animation: MeAppear 1.5s linear forwards;
+}
+
+.MeContent--Hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.MeContentHeader__Quote--Show {
+  animation: MeAppear 1.5s linear forwards;
+  animation-delay: 1s;
+}
+
+.MeContentHeader__Quote--Hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.MeContentAside {}
+
+.MeContentScroll {
+  opacity: 0;
+  position: relative;
+  visibility: hidden;
+}
+
+.MeContentScroll__ChevronContainer {
+  position: absolute;
+  top: -66px;
+}
+
+.MeContentScroll--Show {
+  animation: MeAppear 1.5s linear forwards;
+  animation-delay: 1.5s;
+}
+
+.MeContentScroll--Hide {}
+
+.MeContentFlexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4em 0 0 0;
+}
+
+.MeContentFlexContainer__Left {
+  flex-basis: 10%;
+  margin-top: 0.5em;
+}
+
+.MeContentFlexContainer__Middle {
+  flex-basis: 20%;
+  opacity: 0;
+  padding-top: 0.5em;
+  visibility: hidden;
+  padding-right: 12px;
+}
+
+.MeContentFlexContainer__Middle--Show {
+  animation: MeAppear 1.5s linear forwards;
+  animation-delay: 2s;
+}
+
+.MeContentFlexContainer__Middle--Hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.MeContentFlexContainer__Right {
+  flex-basis: 70%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.MeContentBiography--Show {
+  animation: MeAppear 1.5s linear forwards;
+  animation-delay: 2.25s;
+}
+
+.MeContentBiography--Hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.MeContentHeader {
+  width: 100%;
+}
+
+.MeContentHeader__Title {
+  font-family: 'Droid Serif', serif;
+  font-size: 6em;
+  font-weight: 700;
+  letter-spacing: -6px;
+}
+
+.MeContentHeader__Quote {
+  border-left: none;
+  font-size: 2em;
+  margin: 0 0 1.5em 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.MeContentInterests__Heading {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85em;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.MeContentInterests__Heading__List {
+  list-style: none;
+  padding: 0;
+}
+
+.MeContentInterests__Heading__List {
+  padding-bottom: 2rem;
+}
+
+.MeContentInterests__Item {
+  font-size: 1em;
+}
+
+.MeContentBiography {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9em;
+  padding-top: 0;
+  margin-top: 0;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.MeContentBiography {}
+
+.MeContentBiography__Link {
+  text-decoration: underline;
+  color: #1E90FF;
+}
+
+@media(max-width: 767px) {
+  /* phones */
+  .MeContentHeader__Title {
+    font-size: 4em;
+    letter-spacing: -3px;
+  }
+  .MeContentFlexContainer__Left {
+    display: none;
+  }
+  .MeContentFlexContainer__Middle, .MeContentFlexContainer__Right {
+    flex-basis: 100%;
+    padding:0 0.1rem;;
+  }
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .MeContentHeader__Title {
+    font-size: 4em;
+    letter-spacing: -3px;
+  }
+  .MeContentFlexContainer__Left {
+    display: none;
+  }
+  .MeContentFlexContainer__Middle, .MeContentFlexContainer__Right {
+    flex-basis: 100%;
+  }
+}
+
+@media(min-width: 768px) {
+  /* tablets and desktop */
+}

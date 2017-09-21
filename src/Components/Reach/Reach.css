@@ -1,0 +1,248 @@
+@keyframes ReachAppear {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.ReachContent {
+  /*padding-top: 8em;*/
+  color: white;
+  font-family: 'EB Garamond', serif;
+}
+
+.ReachVideoContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.ReachVideo {
+  object-position: center;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.ReachVideoOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.ReachMainContent {
+  padding-top: 8em;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.4);
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+  transition: all 1s ease;
+}
+
+.ReachContent__Title {
+  font-family: 'Droid Serif', serif;
+  font-size: 6em;
+  font-weight: 700;
+  letter-spacing: -6px;
+  color: white;
+}
+
+.ReachVideoContainer:hover .ReachMainContent {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.ReachVideoFlexContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ReachVideoFlexLeft {
+  flex-basis: 35%;
+}
+
+.ReachVideoFlexRight {
+  flex-basis: 65%;
+}
+
+.ReachForm__FieldSet {
+  border-color: transparent;
+  font-size: 1.3em;
+  margin: 0 0 1.5em 0;
+  opacity: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.ReachForm__FieldSet--Show {
+  animation: ReachAppear 1.5s linear forwards;
+  animation-delay: 1s;
+}
+
+.ReachForm__FieldSet--Hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ReachForm__Div, .ReachForm__DivButton {
+  /*padding-top: 2rem;*/
+  margin-top: 1.2rem;
+}
+
+.ReachForm__Div--Override {
+  margin-top: 0;
+}
+
+.ReachForm__Div label {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.75em;
+  display: block;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  padding: 4px 0;
+}
+
+.ReachForm__Div input {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid black;
+  padding: 12px;
+  width: 70%;
+}
+.ReachForm__Div input:focus{
+  background-color: black;
+  color: white;
+}
+
+.ReachForm__Div textarea {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid black;
+  padding: 12px;
+  width: 70%;
+}
+
+.ReachForm__Div textarea:focus {
+  background-color: black;
+  color: white;
+}
+
+.ReachForm__TextArea {
+  resize: none;
+}
+
+.ReachForm__Submit {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border: 1px solid black;
+  margin-left:2px;
+  margin-right: 1em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+}
+
+.ReachForm__Submit:hover, .ReachForm__Submit:focus {
+  transform: scale(1.05);
+}
+
+.ReachForm__Submit:active {
+  transform: scale(.9);
+}
+.ReachAside{
+  opacity: 0;
+  padding-top: 0.6em;
+  visibility: hidden;
+}
+.ReachAside--Show{
+  animation: ReachAppear 1.5s linear forwards;
+  animation-delay: 0.5s;
+}
+.ReachAside--Hide{
+  opacity: 0;
+  visibility: hidden;
+}
+.ReachAside__Heading {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85em;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.ReachAside__List{
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.ReachVideoFlexContainer--Hide{
+  display:none;
+}
+.ReachVideoFlexContainer--Show{
+}
+@media(max-width: 767px) {
+  /* phones */
+  .ReachMainContent{
+    background:black;
+  }
+  .ReachVideoFlexLeft, .ReachVideoFlexRight {
+    flex-basis: 100%;
+  }
+  .ReachForm__Div input{
+    width: 100%;
+  }
+  .ReachForm__Div textarea{
+    width: 100%;
+  }
+  .ReachForm__Submit {
+    background: white;
+  }
+  .ReachVideoContainer:hover .ReachMainContent {
+    background: black;
+  }
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .ReachMainContent{
+    background:black;
+  }
+  .ReachVideoFlexLeft, .ReachVideoFlexRight {
+    flex-basis: 100%;
+  }
+  .ReachForm__Div input{
+    background: white;
+    width: 100%;
+  }
+  .ReachForm__Div textarea{
+    background:white;
+    width: 100%;
+  }
+  .ReachForm__Submit {
+    background: white;
+  }
+  .ReachVideoContainer:hover .ReachMainContent {
+    background: black;
+  }
+}
+
+@media(min-width: 768px) {
+  /* tablets and desktop */
+}

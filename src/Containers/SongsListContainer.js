@@ -4,10 +4,10 @@ import SongsList from '../Components/SongsList/SongsList';
 
 const mapStateToProps = (state) => {
 
-  DebugLog('state',state);
+  // DebugLog('state',state);
   return {
-    status: state.getSongs.status,
-    songs: state.getSongs.songs
+    status: state.songs.status,
+    music: state.music.list
   }
 }
 

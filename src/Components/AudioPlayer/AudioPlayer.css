@@ -1,0 +1,14 @@
+@keyframes animationTest {
+  0% {
+    height: 2px;
+  }
+  50% {
+    height: 20px;
+  }
+  100% {
+    height: 2px;
+  }
+}
+
+.AudioPlayerSection{
+}

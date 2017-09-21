@@ -1,0 +1,42 @@
+.ProfileElementSection {
+  height: 100%;
+  padding: 24px;
+  overflow-y: scroll;
+  transition: all 1s ease;
+}
+
+.ProfileElementSection--Light {
+  background: white;
+  color: black;
+}
+
+.ProfileElementSection--Dark {
+  background: black;
+  color: white;
+}
+
+.ProfileElementContent {}
+
+.ProfileElementContent__Highlights {}
+
+.ProfileElementContentMain {
+  padding-bottom: 100px;
+}
+
+@media(max-width: 767px) {
+  /* phones */
+  .ProfileElementSection {
+    padding: 12px;
+  }
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .ProfileElementSection {
+    padding: 12px;
+  }
+}
+
+@media(min-width: 768px) {
+  /* tablets and desktop */
+}

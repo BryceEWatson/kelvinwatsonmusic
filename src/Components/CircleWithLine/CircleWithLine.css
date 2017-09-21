@@ -1,0 +1,92 @@
+@keyframes CircleWithLineAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.CircleWithLine__Path {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+
+.CircleWithLine__Path--Active {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: CircleWithLineAnimation 2s linear forwards;
+  -webkit-animation: CircleWithLineAnimation 2s linear forwards;
+}
+
+.CircleWithLine__Path--InActive {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.CircleWithLine--Position--ExploreStation {
+  position: absolute;
+  top: 80px;
+  left: -85px;
+}
+
+.CircleWithLine--Position--BoardTrain {
+  position: absolute;
+  top: 11px;
+  left: -22px;
+}
+
+.CircleWithLine--Position--GoOutdoors {
+  position: absolute;
+  top: 72px;
+  left: 48px;
+}
+
+.CircleWithLine--Position--CabinFromExploreCabin{
+  position: absolute;
+  top: 72px;
+  left: 48px;
+}
+
+.CircleWithLine--Position--TrainStationFromExploreStation {
+  position: absolute;
+  top: 10px;
+  left: -22px;
+}
+
+.CircleWithLine--Position--TrainStationFromCabin {
+  position: absolute;
+  top: 81px;
+  left: -80px;
+}
+
+.CircleWithLine--Position--ExitCabin {
+  position: absolute;
+  top: 81px;
+  left: -81px;
+}
+
+.CircleWithLine--Position--ExploreCabin {
+  position: absolute;
+  top: 75px;
+  left: 40px;
+}
+
+.CircleWithLine--Position--CabinFromExitCabin {
+  position: absolute;
+  top: 9px;
+  left: -22px;
+}
+
+.CircleWithLine--Position--CabinFromExploreCabin{
+  position: absolute;
+  top: 9px;
+  left: -22px;
+}
+.CircleWithLine--Position--TrainStationFromOutdoors{
+  position: absolute;
+  top: 9px;
+  left: -22px;
+}
+.CircleWithLine--Position--MeScroll{
+  position: absolute;
+  top: 9px;
+  left: -20px;
+}

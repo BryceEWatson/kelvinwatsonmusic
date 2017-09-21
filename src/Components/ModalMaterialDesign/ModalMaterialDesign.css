@@ -1,0 +1,107 @@
+/**
+ * Material Modal CSS
+ */
+.ModalMaterialDesign {
+	will-change: visibility, opacity;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 1000;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ModalMaterialDesign--active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.ModalMaterialDesign--align-top {
+	align-items: flex-start;
+}
+
+.ModalMaterialDesign__bg {
+	background: transparent;
+}
+
+.ModalMaterialDesign__dialog {
+	max-width: 50%;
+  max-height: 50%;
+	padding: 1.2rem;
+}
+
+.ModalMaterialDesign__content {
+	will-change: transform, opacity;
+	position: relative;
+	padding: 2.4rem;
+  text-align: left;
+	background-color: rgba(255,255,255,.9);
+	background-clip: padding-box;
+	box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
+	opacity: 0;
+	transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ModalMaterialDesign__content h1 {
+  position: absolute;
+  top: 0;
+}
+
+.ModalMaterialDesign__content--active {
+	opacity: 1;
+}
+
+.ModalMaterialDesign__close {
+	z-index: 1100;
+	cursor: pointer;
+  border: none;
+  position: absolute;
+	top: 0;
+	right: 0;
+	margin: 1.2rem;
+	padding: 0.3rem;
+	background: rgba(0,0,0,0.3);
+	border-radius: 50%;
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ModalMaterialDesign__close svg {
+	width: 19px;
+	fill: #fff;
+	pointer-events: none;
+	vertical-align: top;
+}
+
+.ModalMaterialDesign__close:hover {
+	background: rgba(0,0,0,0.6);
+}
+
+.ModalMaterialDesign__trigger {
+	position: relative;
+	display: inline-block;
+	padding: 1.2rem 2.4rem;
+	color: rgba(0,0,0,0.7);
+	line-height: 1;
+	cursor: pointer;
+	background: #ffebee;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	user-select: none;
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ModalMaterialDesign__trigger--active {
+	z-index: 10;
+}
+
+.ModalMaterialDesign__trigger:hover {
+	background: #e5d3d6;
+}

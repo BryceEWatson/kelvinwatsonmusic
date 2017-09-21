@@ -1,0 +1,28 @@
+.SkipIntroButtonSection{
+  position: absolute;
+  bottom: 64px;
+  width: 100%;
+  text-align: center;
+
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+
+  animation: SkipIntroButtonDisappear 1s linear forwards;
+  animation-delay: 5.8s;
+
+  transition: all 1s ease;
+}
+
+@keyframes SkipIntroButtonDisappear {
+  0%{
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1000;
+  }
+}

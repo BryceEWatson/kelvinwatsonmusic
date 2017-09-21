@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Router, Route } from 'react-router';
 import registerServiceWorker from './registerServiceWorker';
+
+import App from './App';
+import Root from './Components/Root/Root'
 
 /**
  * REDUX
@@ -12,9 +14,15 @@ import { createStore, applyMiddleware } from 'redux';
 import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import RootReducer from './Reducers';
-import { fetchSongs } from './Actions';
-
+import { fetchMusic, fetchScene } from './Actions';
+/*
+ * Utils
+ */
 import FirebaseUtil from './Utils/InitializeFirebase';
+/*
+ * Styles
+ */
+import './index.css';
 
 let store;
 if (process.env.NODE_ENV === 'production'){
@@ -37,11 +45,11 @@ if (process.env.NODE_ENV === 'production'){
 
 FirebaseUtil.init();
 
-store.dispatch(fetchSongs());
+// store.dispatch(getNavigation());
+store.dispatch(fetchMusic());
+store.dispatch(fetchScene('TRAIN_STATION'));
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <Root store={store} />,
   document.getElementById('root'));
 registerServiceWorker();

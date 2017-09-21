@@ -1,0 +1,36 @@
+.OutdoorsDialPositioningWrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 12;
+  bottom: 65px;
+  right: -240px;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.OutdoorsDialOption {
+  position: absolute;
+}
+
+.OutdoorsDial__TitleChoose {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.OutdoorsDial__Option {
+  position: absolute;
+}
+
+.OutdoorsDial__Option--Left {
+  left: 0;
+}
+
+.OutdoorsDial__Option--Right {
+  right: 0;
+}

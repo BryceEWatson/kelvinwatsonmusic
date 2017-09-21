@@ -1,0 +1,39 @@
+.PageTransition {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.PageTransition__page {
+  position: fixed;
+  display: inline-block;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  will-change: left;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.PageTransition__page--first {
+  left: -100%;
+}
+
+.PageTransition__page-second {
+  left: 0px;
+}
+
+.PageTransition__page--third {
+  left: 100%;
+}
+
+.PageTransition__page--active {
+  position: fixed;
+  left: 0;
+  z-index: 1;
+}

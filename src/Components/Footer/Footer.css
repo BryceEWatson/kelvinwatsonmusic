@@ -1,0 +1,120 @@
+.FooterSection {
+  color: white;
+  font-size: 0.8em;
+  background: black;
+  position: fixed;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 8px 8px;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+.FooterAudio {}
+
+.FooterSocial, .FooterEmail {
+  display: inline-block;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+.FooterSectionNowPlaying {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  vertical-align: super;
+}
+
+.FooterSectionNowPlaying__TrackTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.FooterContainer-Left-BandCampIFrame {
+  border: 0;
+  height: 42px;
+  width: 100%;
+}
+
+.FooterLeft {
+  flex-basis: 35%;
+}
+
+.FooterRight {
+  flex-basis: 65%;
+  text-align: right;
+  color: white;
+  font-size: 0.9em;
+}
+
+.FooterEmail {
+  font-family: 'Montserrat', sans-serif;
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .FooterAudio {
+    display: none;
+  }
+  .FooterRight {
+    flex-basis: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .FooterSocial {
+    margin-left: 0;
+  }
+  .FooterEmail {
+    text-align: left;
+    margin-left: 8px;
+    font-weight: 400;
+  }
+  .FooterSectionNowPlaying__Credit {
+    display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  /* portrait phones */
+  .FooterAudio {
+    display: none;
+  }
+  .FooterRight {
+    flex-basis: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .FooterSocial {
+    margin-left: 0;
+  }
+  .FooterEmail {
+    text-align: left;
+    margin-left: 8px;
+    font-weight: 400;
+  }
+  .FooterSectionNowPlaying__Credit {
+    display: none;
+  }
+}

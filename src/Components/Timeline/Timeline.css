@@ -1,0 +1,201 @@
+@keyframes TimelineAppear {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.TimelineContent {
+  padding-top: 8em;
+  font-family: 'EB Garamond', serif;
+  overflow-y: scroll;
+}
+
+.TimelineContent--Show {
+  /*visibility: visible;
+  opacity:1;*/
+  animation: TimelineAppear 1.5s linear forwards;
+}
+
+.TimelineContent--Hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.TimelineContentHeader__Quote--Show {
+  animation: TimelineAppear 1.5s linear forwards;
+  animation-delay: 1s;
+}
+
+.TimelineContentHeader__Quote--Hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.TimelineContentAside {}
+
+.TimelineContentScroll {
+  opacity: 0;
+  position: relative;
+  visibility: hidden;
+}
+
+.TimelineContentScroll__ChevronContainer {
+  position: absolute;
+  top: -66px;
+}
+
+.TimelineContentScroll--Show {
+  animation: TimelineAppear 1.5s linear forwards;
+  animation-delay: 1.5s;
+}
+
+.TimelineContentScroll--Hide {}
+
+.TimelineContentFlexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4em 0 0 0;
+}
+
+.TimelineContentFlexContainer__Left {
+  flex-basis: 10%;
+  margin-top: 0.5em;
+}
+
+.TimelineContentFlexContainer__Middle {
+  flex-basis: 20%;
+  opacity: 0;
+  padding-top: 0.5em;
+  visibility: hidden;
+  padding-right: 12px;
+}
+
+.TimelineContentFlexContainer__Middle--Show {
+  animation: TimelineAppear 1.5s linear forwards;
+  animation-delay: 2s;
+}
+
+.TimelineContentFlexContainer__Middle--Hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.TimelineContentFlexContainer__Right {
+  flex-basis: 70%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.TimelineContentBiography--Show {
+  animation: TimelineAppear 1.5s linear forwards;
+  animation-delay: 2.25s;
+}
+
+.TimelineContentBiography--Hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.TimelineContentHeader {
+  width: 100%;
+}
+
+.TimelineContentHeader__Title {
+  font-family: 'Droid Serif', serif;
+  font-size: 6em;
+  font-weight: 700;
+  letter-spacing: -6px;
+}
+
+.TimelineContentHeader__Quote {
+  border-left: none;
+  font-size: 2em;
+  margin: 0 0 1.5em 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.TimelineContentInterests__Heading {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85em;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.TimelineContentInterests__Heading__List {
+  list-style: none;
+  padding: 0;
+}
+
+.TimelineContentInterests__Heading__List {
+  padding-bottom: 2rem;
+}
+
+.TimelineContentInterests__Item {
+  font-size: 1em;
+}
+
+.TimelineContentBiography {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9em;
+  padding-top: 0;
+  margin-top: 0;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.TimelineContentBiography {}
+
+.TimelineContentBiography__Link {
+  text-decoration: underline;
+  color: #1E90FF;
+}
+
+.Timeline__Link{
+  color: green;
+}
+
+.Timeline__Technologies {
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+}
+
+@media(max-width: 767px) {
+  /* phones */
+  .TimelineContentHeader__Title {
+    font-size: 4em;
+    letter-spacing: -3px;
+  }
+  .TimelineContentFlexContainer__Left {
+    display: none;
+  }
+  .TimelineContentFlexContainer__Middle, .TimelineContentFlexContainer__Right {
+    flex-basis: 100%;
+    padding:0 0.1rem;;
+  }
+}
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .TimelineContentHeader__Title {
+    font-size: 4em;
+    letter-spacing: -3px;
+  }
+  .TimelineContentFlexContainer__Left {
+    display: none;
+  }
+  .TimelineContentFlexContainer__Middle, .TimelineContentFlexContainer__Right {
+    flex-basis: 100%;
+  }
+}
+
+@media(min-width: 768px) {
+  /* tablets and desktop */
+}

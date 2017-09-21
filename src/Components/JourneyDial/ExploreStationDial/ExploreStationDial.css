@@ -1,0 +1,36 @@
+.ExploreStationDialPositioningWrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 12;
+  bottom: 0px;
+  right: -160px;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.ExploreStationDialOption {
+  position: absolute;
+}
+
+.ExploreStationDial__TitleChoose {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ExploreStationDial__Option {
+  position: absolute;
+}
+
+.ExploreStationDial__Option--Left {
+  left: 0;
+}
+
+.ExploreStationDial__Option--Right {
+  right: 0;
+}

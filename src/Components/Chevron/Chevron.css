@@ -1,0 +1,336 @@
+@-webkit-keyframes chevron {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes chevron {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes Appear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes Blink {
+  0% {
+    opacity: 0.1;
+  }
+  9% {
+    opacity: 0.6;
+  }
+  10% {
+    opacity: .5;
+  }
+  13% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: .5;
+  }
+  25% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: .5;
+  }
+  65% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0.5;
+  }
+  82% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 0.3;
+  }
+  92% {
+    opacity: 1;
+  }
+  92.5% {
+    opacity: 0.6;
+  }
+}
+
+.ChevronSection {
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  transition: all 1s ease;
+}
+
+.ChevronSection--SkipIntro {
+  -webkit-animation: Appear 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  /* older webkit */
+  -webkit-animation: Appear 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  -moz-animation: Appear 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  -o-animation: Appear 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  animation: Appear 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  /* easeInBack */
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.ChevronSection--Animate {
+  -webkit-transition: slide 1500ms cubic-bezier(0.600, 0, 0.735, 0.045);
+  /* older webkit */
+  -webkit-transition: slide 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  -moz-transition: slide 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  -o-transition: slide 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  transition: slide 1500ms cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  ;
+  /* easeInBack */
+  -moz-animation-delay: 5.8s;
+  -webkit-animation-delay: 5.8s;
+}
+
+.Chevron {
+  width: 14px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 0 0 0 -8px;
+  border-radius: 0px;
+  transition: all 1s ease;
+}
+
+
+/*.ChevronSection:hover .ChevronOne {
+  -webkit-animation: chevron 2.5s infinite;
+  animation: chevron 2.5s infinite;
+  -moz-animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+
+  border-color: #fee;
+}*/
+
+.ChevronOne {
+  -webkit-animation: chevron 2.5s infinite;
+  animation: chevron 2.5s infinite;
+  -moz-animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  border-color: #fee;
+}
+
+
+/*.ChevronSection:hover .ChevronTwo{
+  -webkit-animation: chevron 2.5s infinite;
+  animation: chevron 2.5s infinite;
+  -moz-animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-direction: alternate;
+
+  border-color: #fee;
+}*/
+
+.ChevronTwo {
+  -webkit-animation: chevron 2.5s infinite;
+  animation: chevron 2.5s infinite;
+  -moz-animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+  -webkit-animation-direction: alternate;
+  border-color: #fee;
+}
+
+
+/*.ChevronSection:hover .ChevronThree {
+  -webkit-animation: chevron 2.5s infinite;
+  animation: chevron 2.5s infinite;
+  -moz-animation-delay: .9s;
+  -webkit-animation-delay: .9s;
+  -webkit-animation-direction: alternate;
+
+  border-color: #fee;
+}*/
+
+.ChevronThree {
+  -webkit-animation: chevron 2.5s infinite;
+  animation: chevron 2.5s infinite;
+  -moz-animation-delay: .9s;
+  -webkit-animation-delay: .9s;
+  -webkit-animation-direction: alternate;
+  border-color: #fee;
+}
+
+.ChevronOne {
+  margin-top: 40px;
+}
+
+.ChevronTwo {
+  margin-top: 52px;
+}
+
+.ChevronThree {
+  margin-top: 64px;
+}
+
+.ChevronLabel {
+  text-rendering: optimizeLegibility;
+  font-family: 'Forum', cursive;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 180px;
+  transition: all 1s ease;
+  /*opacity: 0;
+  visibility:hidden;*/
+  /*color: #fee;*/
+  /*text-shadow: 0 -40px 90px, 0 0 5px, 0 0 1em white, 0 0 0.8em white, 0 0 0.2em yellow, 0 20px 4px #000;*/
+}
+
+.ChevronSection:hover .ChevronLabel {
+  color: #fee;
+  /*visibility:visible;
+  opacity: 1;*/
+  /*text-shadow: 0 -40px 90px, 0 0 5px, 0 0 1em white, 0 0 0.8em white, 0 0 0.2em white, 0 20px 4px #000;*/
+  animation: blink linear 1s;
+  animation-iteration-count: 1
+}
+
+.ChevronLabel {
+  color: white;
+  /*filter: brightness(150%);*/
+  font-size: 0.9em;
+  position: absolute;
+  transition: all 1s ease;
+  -webkit-transition: all 0.9s ease;
+  animation: Blink 5s infinite;
+}
+
+.ChevronLabel--Position--ExploreStation {
+  top: -88px;
+  right: -42px;
+}
+.ChevronLabel--Position--BoardTrain{
+  top: 14px;
+  left: -145px;
+}
+.ChevronLabel--Position--GoOutdoors{
+  top: -46px;
+  left: -213px;
+}
+.ChevronLabel--Position--TrainStationFromOutdoors{
+  top: -26px;
+  right: -9px;
+}
+.ChevronLabel--Position--TrainStationFromExploreStation{
+  top: 15px;
+  left: -167px;
+}
+.ChevronLabel--Position--TrainStationFromCabin{
+  top: -80px;
+  left: -120px;
+}
+.ChevronLabel--Position--ExitCabin{
+  top: -49px;
+  left: 67px;
+}
+.ChevronLabel--Position--ExploreCabin{
+  top: -77px;
+  left: 9px;
+}
+.ChevronLabel--Position--CabinFromExitCabin{
+  top: -26px;
+  right: -16px;
+}
+.ChevronLabel--Position--CabinFromExploreCabin{
+  top: 12px;
+  left: 28px;
+}
+.ChevronLabel--Position--MeScrollDown{
+  top: -30px;
+  left: -40px;
+}
+
+.ChevronLabel--Position--Active {
+  /*filter: brightness(350%);*/
+  filter: blur(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.ChevronLabel--Position--InActive {
+  /*filter: brightness(0%);*/
+  filter: blur(30px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ChevronLabel--Position--BoardTrain {}
+
+.ChevronLabel--Position--GoOutdoors {}
+
+.ChevronLabel--Compensate0Degree {
+  transform: rotate(0deg);
+  right: -75px;
+  bottom: 0;
+}
+
+.ChevronLabel--Compensate90Degree {
+  transform: rotate(270deg);
+  left: -35px;
+  top: 75px;
+}
+
+.ChevronLabel--Compensate270Degree {
+  transform: rotate(90deg);
+  right: -35px;
+  top: 75px;
+}
+
+.ChevronLabel--Compensate180Degree {
+  transform: rotate(-180deg);
+  left: -75px;
+  bottom: -10px;
+}

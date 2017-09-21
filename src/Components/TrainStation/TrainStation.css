@@ -1,0 +1,319 @@
+.TrainStation__Section{
+  width: 100%;
+  height: 100%;
+}
+
+.TrainStation__Section--Show{
+  display:block;
+}
+
+.TrainStation__Section--Hide{
+  display:none;
+}
+
+.TrainStation__MainImage{
+  position:absolute;
+  width: 102%;
+  height: 102%;
+  object-fit: cover;
+  object-position: center;
+  opacity:0;
+  z-index: 10;
+
+  -webkit-filter: url("#glitch");
+  filter: url("#glitch");
+  display: inline-block;
+}
+
+.TrainStation__MainImage--Animation{
+  animation: FlickerAndGlitch 2s linear forwards;
+  animation-delay: 6s;
+}
+
+.TrainStation__MainImage--SkipAnimation{
+  display:none;
+}
+
+.TrainStation__GlitchSvg{
+  display:none;
+}
+
+.TrainStation__MainImage2{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 102%;
+  object-fit: cover;
+  object-position: center;
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 11;
+}
+
+.TrainStation__MainImage2--Dimmer{
+  filter: brightness(32%);
+  -webkit-filter: brightnesss(32%);
+}
+
+.TrainStation__MainImage2--Animation{
+  animation: Appear 1s linear forwards;
+  animation-delay: 8s;
+}
+
+.TrainStation__MainImage2--SkipAnimation{
+  opacity:1;
+  visibility: visible;
+}
+
+@keyframes Appear {
+  0%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  100%{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/*
+ * Adapted from https://codepen.io/lbebber/pen/bNRgML?page=13
+ */
+/*@-webkit-keyframes FlickerAndGlitch {
+  0% {
+    -webkit-filter: url("#glitch");
+    filter: url("#glitch");
+    opacity: 1;
+  }
+  13.9% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 0;
+  }
+  14.9% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  22.9% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0;
+  }
+  24.9% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  34.9% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  39.9% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  42.9% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  44.9% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  54.9% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  69.4% {
+    opacity: 0;
+  }
+  69.5% {
+    opacity: 1;
+  }
+  69.9% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  79.4% {
+    opacity: 0;
+  }
+  79.9% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  89.8% {
+    opacity: 0;
+  }
+  89.9% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+  }
+}*/
+@keyframes FlickerAndGlitch {
+  0% {
+    -webkit-filter: url("#glitch");
+    filter: url("#glitch");
+    opacity: 1;
+  }
+  13.9% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 0;
+  }
+  14.9% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  22.9% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  24.9% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  34.9% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  39.9% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  40% {
+    opacity: 1;
+  }
+  42.9% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  44.9% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  54.9% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  69.4% {
+    opacity: 0;
+  }
+  69.5% {
+    opacity: 1;
+  }
+  69.9% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  79.4% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  79.9% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  89.8% {
+    opacity: 0;
+  }
+  89.9% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  90.8% {
+    opacity: 1;
+  }
+  91.8% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
+  93.5% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0;
+  }
+  97.2% {
+    opacity: 0;
+  }
+  97.8% {
+    opacity: 1;
+  }
+  /*99%{
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+  }*/
+  98% {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-filter: none;
+    filter: none;
+  }
+}

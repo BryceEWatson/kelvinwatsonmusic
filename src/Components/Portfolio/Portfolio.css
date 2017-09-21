@@ -1,0 +1,185 @@
+.PortfolioContent {
+  background: black;
+  font-family: 'EB Garamond', serif;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  padding-top:3rem;
+}
+
+.PortfolioItem {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100% !important;
+  background-color: black;
+}
+
+.PortfolioItem--Black {
+  background: black;
+}
+
+.PortfolioItem--White {
+  background: white;
+}
+
+.PortfolioItem__Image {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  /*filter: invert(50%);*/
+  transition: all 1s ease-out;
+  object-fit: contain;
+  transform: scale(1);
+
+}
+
+.PortfolioItem:hover .PortfolioItem__Image {
+  -webkit-filter: grayscale(10%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(10%);
+  /*filter: invert(0%);*/
+  transform: scale(1.05);
+}
+
+.PortfolioItem__Overlay--Black {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.PortfolioItem__Overlay {
+  opacity: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*background: rgba(0,0,0,0.5);*/
+  display: table;
+  text-align: center;
+  width: 100%;
+  color: white;
+  height: 100%;
+  top: 2rem;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.1s;
+}
+
+.PortfolioItem__Overlay--Show {
+  opacity: 1;
+  visibility: visible;
+  top: 0rem;
+}
+
+.PortfolioItem__Overlay--Title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.PortfolioItem__Overlay--Type {
+  color: #999FFA;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: -0.1rem;
+}
+
+.PortfolioItem__Overlay--Tech {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  letter-spacing: -0.05rem;
+  text-transform: uppercase;
+}
+
+.PortfolioItem__Overlay--URL {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.8em;
+  font-weight: 100;
+  letter-spacing: -0.08rem;
+}
+
+.PortfolioItem:hover .PortfolioItem__Overlay {
+  opacity: 1;
+  visibility: visible;
+  top: 0rem;
+}
+
+.aspect-ratio {
+  height: 0;
+  position: relative;
+}
+
+.aspect-ratio--1x1 {
+  padding-bottom: 100%;
+}
+
+.aspect-ratio--object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*z-index: 100;*/
+}
+
+.cover {
+  background-size: cover !important;
+}
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.db {
+  display: block;
+}
+
+.fl {
+  float: left;
+  _display: inline;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+.PortfolioCell--Hide{
+  display:none;
+}
+
+@media screen and (min-width: 30em) {
+  .w-25-ns {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .w-third-m {
+    width: calc(100% / 3);
+  }
+}

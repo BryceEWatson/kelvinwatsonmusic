@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+/*@import url('https://fonts.googleapis.com/css?family=Lora');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+@import url('https://fonts.googleapis.com/css?family=Sarpanch:700|Work+Sans:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+@import url('https://fonts.googleapis.com/css?family=Forum');
+/*@import url('https://fonts.googleapis.com/css?family=Alegreya|PT+Serif');*/
+/*@import url('https://fonts.googleapis.com/css?family=Amiri|Port+Lligat+Sans');*/
+/*@import url('https://fonts.googleapis.com/css?family=Cinzel');*/
+
+html {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  font-size: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root{
+  height: 100%;
+  overflow: hidden;
 }

@@ -1,0 +1,108 @@
+.SocialIconsContainer{
+  font-family: 'Montserrat',sans-serif;
+  text-align: right;
+  vertical-align: middle;
+  display: table;
+}
+
+.SocialIcons__Follow{
+  display:table-cell;
+  vertical-align: middle;
+  letter-spacing: 0.05em;
+}
+
+.SocialIconsContainer:hover .SocialIcons__Follow{
+  font-weight: 500;
+}
+
+.SocialIcons__CircleWithLine{
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 16px;
+}
+
+.SocialIcons{
+  display:table-cell;
+  height: 28px;
+  opacity: 0;
+  visibility:hidden;
+  margin:0;
+  padding:0;
+
+  /* ON LEAVE TRANSITION */
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  -webkit-transition-delay: 0s; /* Safari */
+  transition-delay: 0s;
+}
+
+.SocialIcon {
+  display:inline-block;
+  width: 28px;
+  height: 28px;
+  image-rendering: crisp-edges;
+  filter: brightness(95%);
+  filter: blur(0.02em);
+  transition: 0.5s;
+	transform-style: preserve-3d;
+}
+
+.SocialIcon--VerticalFlip:Hover{
+  transform: rotateY(360deg);
+}
+
+.SocialIcon--HorizontalFlip:Hover{
+  transform: rotateX(360deg);
+}
+
+.SocialIconsContainer:hover{
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.SocialIconsContainer:hover > .SocialIcons{
+  display:table-cell;
+  opacity: 1;
+  vertical-align: middle;
+  visibility:visible;
+
+  /* ON ENTRY TRANSITION */
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transition-delay: 0.3s; /* Safari */
+  transition-delay: 0.3s;
+}
+
+
+@media(max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+  .SocialIcons__Follow{
+    display:none;
+  }
+  .SocialIcons__CircleWithLine{
+    display:none;
+  }
+  .SocialIcons{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media(max-width: 767px) {
+  /* phones */
+  .SocialIcons__Follow{
+    display:none;
+  }
+  .SocialIcons__CircleWithLine{
+    display:none;
+  }
+  .SocialIcons{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media(min-width: 768px) {
+  /* tablets and desktop */
+
+}

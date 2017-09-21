@@ -1,0 +1,36 @@
+.HallwayDialPositioningWrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 12;
+  bottom: 0px;
+  left: 180px;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.HallwayDialOption {
+  position: absolute;
+}
+
+.HallwayDial__TitleChoose {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.HallwayDial__Option {
+  position: absolute;
+}
+
+.HallwayDial__Option--Left {
+  left: 0;
+}
+
+.HallwayDial__Option--Right {
+  right: 0;
+}

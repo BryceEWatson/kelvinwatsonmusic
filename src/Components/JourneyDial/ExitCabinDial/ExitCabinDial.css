@@ -1,0 +1,36 @@
+.ExitCabinDialPositioningWrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 12;
+  bottom: 80px;
+  right: -240px;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+
+.ExitCabinDialOption {
+  position: absolute;
+}
+
+.ExitCabinDial__TitleChoose {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ExitCabinDial__Option {
+  position: absolute;
+}
+
+.ExitCabinDial__Option--Left {
+  left: 0;
+}
+
+.ExitCabinDial__Option--Right {
+  right: 0;
+}

@@ -1,0 +1,60 @@
+.JourneyDialSection {
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 12;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.JourneyDialSection--SkipIntro {
+  opacity: 1;
+}
+
+.JourneyDialSection--AnimateAppear {
+  animation: JourneyDialSectionAppear 1s normal forwards;
+  animation-delay: 5.8s;
+  -webkit-animation: JourneyDialSectionAppear 1s normal forwards;
+  -webkit-animation-delay: 5.8s;
+  animation-fill-mode: forwards;
+  z-index: 12;
+}
+
+.JourneyDial__TitleChoose{
+  text-rendering: optimizeLegibility;
+  font-family: 'Forum', cursive;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.9);
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+/*.JourneyDial__TitleChoose:hover{
+  animation: Noise 2s linear 2;
+  cursor: pointer;
+}*/
+.JourneyDial__TitleC{
+  font-size: 1.5rem;
+}
+
+
+@keyframes JourneyDialSectionAppear {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
