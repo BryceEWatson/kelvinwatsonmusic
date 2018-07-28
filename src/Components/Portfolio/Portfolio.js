@@ -107,7 +107,6 @@ export default class Portfolio extends React.Component {
     }
     return (
       <div className={`PortfolioContent`}>
-
         <main className="cf w-100">
           <div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://brycewatson.com')}
@@ -115,10 +114,10 @@ export default class Portfolio extends React.Component {
             onMouseLeave={()=>this.hideDescription('bryce')}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem">
               <img src={brycewatson} className="db bg-center cover aspect-ratio--object PortfolioItem__Image" />
-              <div className="PortfolioItem__Overlay--Black"></div>
+              {/*<div className="PortfolioItem__Overlay--Black"></div>*/}
             </div>
           </div>
-          <div className="fl w-50 w-third-m w-25-ns"
+          {/*<div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://brycewatson.com')}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem">
               <div className={`PortfolioItem__Overlay
@@ -129,8 +128,8 @@ export default class Portfolio extends React.Component {
                 <div className="PortfolioItem__Overlay--URL">brycewatson.com</div>
               </div>
             </div>
-          </div>
-          <div className={`fl w-50 w-third-m w-25-ns
+          </div>*/}
+          {/*<div className={`fl w-50 w-third-m w-25-ns
             ${thirds? '': quarters || halves ? 'PortfolioCell--Hide' : ''}`}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem PortfolioItem--Blank">
             </div>
@@ -139,8 +138,8 @@ export default class Portfolio extends React.Component {
             ${thirds? '': quarters || halves ? 'PortfolioCell--Hide' : ''}`}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem PortfolioItem--Blank">
             </div>
-          </div>
-          <div className="fl w-50 w-third-m w-25-ns"
+          </div>*/}
+          {/*<div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://gaymerstreams.com')}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem">
               <div className={`PortfolioItem__Overlay
@@ -151,7 +150,7 @@ export default class Portfolio extends React.Component {
                 <div className="PortfolioItem__Overlay--URL">gaymerstreams.com</div>
               </div>
             </div>
-          </div>
+          </div>*/}
           <div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://gaymerstreams.com')}
             onMouseOver={()=>this.showDescription('gaymerStreams')}
@@ -161,7 +160,7 @@ export default class Portfolio extends React.Component {
               <div className="PortfolioItem__Overlay--Black"></div>
             </div>
           </div>
-          <div className={`fl w-50 w-third-m w-25-ns
+          {/*<div className={`fl w-50 w-third-m w-25-ns
             ${quarters || halves ? 'PortfolioCell--Hide' : ''}`}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem">
             </div>
@@ -170,7 +169,7 @@ export default class Portfolio extends React.Component {
             ${quarters || thirds || halves ? 'PortfolioCell--Hide' : ''}`}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem">
             </div>
-          </div>
+          </div>*/}
           <div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://www.webcomponents.org/element/watsonlogic-software/watsonlogic-parallax/elements/watsonlogic-parallax')}
             onMouseOver={()=>this.showDescription('watsonlogicParallax')}
@@ -180,7 +179,7 @@ export default class Portfolio extends React.Component {
               <div className="PortfolioItem__Overlay--Black"></div>
             </div>
           </div>
-          <div className="fl w-50 w-third-m w-25-ns"
+          {/*<div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://www.webcomponents.org/element/watsonlogic-software/watsonlogic-parallax/elements/watsonlogic-parallax')}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem">
               <div className={`PortfolioItem__Overlay
@@ -190,8 +189,8 @@ export default class Portfolio extends React.Component {
                 <div className="PortfolioItem__Overlay--Tech">POLYMER 2.0, MOCHA, CHAI</div>
               </div>
             </div>
-          </div>
-          <div className={`fl w-50 w-third-m w-25-ns
+          </div>*/}
+          {/*<div className={`fl w-50 w-third-m w-25-ns
             ${thirds? '': quarters || thirds || halves ? 'PortfolioCell--Hide' : ''}`}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem PortfolioItem--Blank">
             </div>
@@ -200,8 +199,8 @@ export default class Portfolio extends React.Component {
             ${thirds? '':quarters || thirds || halves ? 'PortfolioCell--Hide' : ''}`}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem PortfolioItem--Blank">
             </div>
-          </div>
-          <div className="fl w-50 w-third-m w-25-ns"
+          </div>*/}
+          {/*<div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://github.com/eBay/Mildly-Rich-Text-Editor')}>
             <div className="aspect-ratio aspect-ratio--1x1 PortfolioItem PortfolioItem--Blank">
               <div className={`PortfolioItem__Overlay
@@ -211,7 +210,7 @@ export default class Portfolio extends React.Component {
                 <div className="PortfolioItem__Overlay--Tech">Android Studio, Robolectric</div>
               </div>
             </div>
-          </div>
+          </div>*/}
           <div className="fl w-50 w-third-m w-25-ns"
             onClick={()=>this.openLink('https://github.com/eBay/Mildly-Rich-Text-Editor')}
             onMouseOver={()=>this.showDescription('mildlyRichTextEditor')}

@@ -26,7 +26,7 @@ const Root = ({ store }) => (
         <Route exact path="/play" component={App} />
         <Route path="/blog" component={BlogContainer} />
         <Route path="/me" component={MeContainer} />
-        <Route exact path="/" component={MeContainer} />
+        <Route exact path="/" component={App} />
 
         <FooterContainer/>
       </div>
