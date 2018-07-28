@@ -84,17 +84,16 @@ export default class Reach extends React.Component {
             <div className={`ReachVideoFlexLeft ReachAside
               ${this.state.isMounted ? 'ReachAside--Show' : 'ReachAside--Hide'}`}>
               <div className="ReachAside__Heading">
-                Software/Web Development
               </div>
               <ul className="ReachAside__List">
-                <li>Do you need a website or app?</li>
+                <li></li>
               </ul>
               <div className="ReachAside__Heading">
-                Music
+
               </div>
               <ul className="ReachAside__List">
-                <li>Do you need music for your project?</li>
-                <li>Are you a vocalist who wants to collaborate?</li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
             <div className="ReachVideoFlexRight">

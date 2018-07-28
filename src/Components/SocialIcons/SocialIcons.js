@@ -53,15 +53,15 @@ export default class SocialIcons extends React.Component {
               <img src={linkedin} alt="LinkedIn icon for Kelvin Watson" className="SocialIcon SocialIcon--VerticalFlip"/>
             </a>
 
-            <a href="https://soundcloud.com/ninjakub" target="_blank">
+            <a href="https://soundcloud.com/kelvinwatson" target="_blank">
               <img src={soundcloud} alt="SoundCloud icon for Kelvin Watson" className="SocialIcon SocialIcon--HorizontalFlip"/>
             </a>
 
-            <a href="https://twitter.com/vinnie_panda" target="_blank">
+            <a href="" target="_blank">
               <img src={twitter} alt="Twitter icon for Kelvin Watson" className="SocialIcon SocialIcon--VerticalFlip"/>
             </a>
 
-            <a href="https://www.youtube.com/channel/UC1oQJbIdl4tiDgE16hbq7UQ" target="_blank">
+            <a href="" target="_blank">
               <img src={youtube} alt="YouTube icon for Kelvin Watson" className="SocialIcon SocialIcon--HorizontalFlip"/>
             </a>
           </div>

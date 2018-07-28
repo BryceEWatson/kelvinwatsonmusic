@@ -30,7 +30,7 @@ const Footer = ({ backgroundMusicTitle }) => {
           <SocialIcons/>
         </div>
         <div className="FooterEmail">
-          info@kelvinwatson.com
+          reach@kelvinwatson.com
         </div>
       </div>
 
